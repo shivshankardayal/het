@@ -89,6 +89,9 @@ code {
 
 footer {
     bottom:0;
+    margin-bottom:0px;
+    margin-left:30px;
+    margin-right:60px;
 }
 
 .signature {
@@ -101,6 +104,22 @@ footer {
 
 .start {
     margin-top: 20px;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.mdc-theme--secondary-dark {
+    background-color:#2e7d32!important;
+    color: white;
+}
+
+.mdc-theme--secondary-light {
+    background-color:#a5d6a7!important;
+    color: black!important;
 }
 
 /* mobile-small */
