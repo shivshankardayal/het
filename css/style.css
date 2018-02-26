@@ -1,0 +1,137 @@
+/* My CSS */
+
+body {
+    font-family: serif;
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size:16px;
+}
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    border: 1px solid #ddd;
+    /*  box-shadow: 0 0 0.1cm rgba(0,0,0,0.5);*/
+}
+page[size="A4"] {  
+    max-width: 21cm;
+    min-width: 300ox;
+    min-height: 29.7cm;
+    overflow: hidden;
+}
+.margins {
+    padding-top: 20px;
+    margin-bottom:80px;
+    margin-left:30px;
+    margin-right:60px;
+}
+
+@media print {
+    body, page {
+	margin: 0;
+	box-shadow: 0;
+    }
+}
+
+.fr {
+    float:right;
+}
+
+.fl {
+    float:left;
+}
+
+.clear-both {
+    clear:both;
+}
+
+.menu-anchor {
+    text-decoration: none;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #5e92f3;
+}
+.toc-li {
+    list-style: none;
+    margin:5px;
+}
+
+.book-name {
+    margin-top:120px;
+    text-align: center;
+    font-size: 70px;
+    line-height:100px;
+}
+
+.subtitle {
+    margin-top:40px;
+    text-align: center;
+    font-size: 30px;
+    line-height:50px;
+}
+
+.author-name {
+    text-align: center;
+    font-size: 52px;
+}
+
+.mid-text {
+    text-align: center;
+}
+
+code {
+    font-size: 16px;
+}
+
+footer {
+    bottom:0;
+}
+
+.signature {
+    border-top: 1px solid #080;
+}
+
+.green {
+    color: #080;
+}
+
+.start {
+    margin-top: 20px;
+}
+
+/* mobile-small */
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) { }
+/* mobile-large */
+@media all and (min-width: 361px) and (orientation: portrait) { }
+/* mobile-small-landscape */
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+/* mobile-large-landscape */
+@media all and (min-width: 481px) and (orientation: landscape) { }
+/* tablet-small-landscape */
+@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) { }
+/* tablet-large-landscape */
+@media all and (min-width: 961px) and (orientation: landscape) { }
+/* tablet-small */
+@media all and (min-width: 600px) and (orientation: portrait) { }
+/* tablet-large */
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+/* desktop-x-small-landscape */
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) { }
+/* desktop-small-landscape */
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+/* desktop-medium-landscape */
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px) { }
+/* desktop-xlarge */
+@media all and (min-width: 1601px) and (max-width: 1920px) { }
