@@ -122,6 +122,43 @@ svg {
     color: black!important;
 }
 
+code {
+    background-color:#2e7d32!important;
+    color: #fff;
+}
+
+.prompt {
+    color: #b00;
+}
+
+samp > kbd {
+    font-weight: bold;
+}
+
+.cursor {
+    color: #00b;
+}
+
+pre {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    margin:10px;
+}
+
+.ml-10 {
+    margin-left=10px;
+}
+
+.menu-anchor:hover {
+    color: #fff!important;
+}
 /* mobile-small */
 @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) { }
 /* mobile-large */

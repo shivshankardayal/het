@@ -1,102 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-	<meta charset="utf-8">
-	<meta name="description" content="A book about education, technology, mathematics, computers and programming for humans."/>	
-	<meta name="keywords" content="education, technology, mathematics, programming, humans"/>
-	<meta name="author" content="Shiv Shankar Dayal" />
-	<meta name="copyright" content="Shiv Shankar Dayal" />
-	<meta name="robots" content="index,follow"/>
-	<meta http-equiv="expires" content="86400"/>
-	<meta name="viewport" content="width=21cm, initial-scale=1">
-	<title>Humans, education and technology</title>
-	<link rel="stylesheet" href="css/material-components-web.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/material-components-web.min.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-	<script>
-	 MathJax.Hub.Config({
-	     config: ["MMLorHTML.js"],
-	     jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
-	     extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
-	     TeX: {
-		 extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-	     }
-	 });
-	</script>
-    </head>
-    <body class="mdc-typography">
-	<page size="A4">
-	    <header class="mdc-toolbar mdc-theme--secondary-dark">
-		<div class="mdc-toolbar__row">
-		    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-			<span class="mdc-toolbar__title"><a href="/" class="menu-anchor">Home</a></span>
-			<span class="mdc-toolbar__title"><a href="toc.html" class="menu-anchor">Table of Contents</a></span>
-		    </section>
-		</div>
-	    </header>
-	    <div class="margins">
-		<section>
-		    <h2>Tools Used to Write This Book</h2>
-		    <p>
-			This entire book has been typed using raw HTML5 technologies.
-			I have used <code>Emacs</code> with <code>web-mode</code>.
-			Material design has been used and I do not force a font on
-			users except for headings. You can set default font in your
-			browser and if you do not set then it will be rendered mostly
-			in a <code>serif</code> font.
-		    </p>
-		    <p>
-			For rendering Mathematics, I have used MathJax. Since pages
-			are small it does not really matter as very little math will
-			be present on single page. I have tried to keep the
-			UI sane and responsive in nature. But the problem is when
-			I edit the pages they do cros <code>A4</code> paper size.
-			Keeping it in <code>HTML</code> is important as it can be
-			scanned and indexed by a search-engine. That is why I will
-			not prepare an index as that would be a herculean task.
-		    </p>
-		    <p>
-			For preparing images I have mostly used raw <code>SVG</code>,
-			which are hand-coded. For some images I have used POV-Ray, which
-			is a rayracer program.
-		    </p>
-		    <p>
-			Great folks of Mozilla have written great documentation on <code>HTML5,
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A book about education, technology, mathematics, computers and programming for humans."/>	
+    <meta name="keywords" content="education, technology, mathematics, programming, humans"/>
+    <meta name="author" content="Shiv Shankar Dayal" />
+    <meta name="copyright" content="Shiv Shankar Dayal" />
+    <meta name="robots" content="index,follow"/>
+    <meta http-equiv="expires" content="86400"/>
+    <meta name="viewport" content="width=21cm, initial-scale=1">
+    <title>Humans, education and technology</title>
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/material-components-web.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script>
+     MathJax.Hub.Config({
+	 config: ["MMLorHTML.js"],
+	 jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+	 extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+	 TeX: {
+	     extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+	 }
+     });
+    </script>
+</head>
+<body class="mdc-typography">
+    <page size="A4">
+	<header class="mdc-toolbar mdc-theme--secondary-dark">
+	    <div class="mdc-toolbar__row">
+		<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+		    <span class="mdc-toolbar__title"><a href="/" class="menu-anchor">Home</a></span>
+		    <span class="mdc-toolbar__title"><a href="toc.html" class="menu-anchor">Table of Contents</a></span>
+		</section>
+	    </div>
+	</header>
+	<div class="margins">
+	    <section>
+		<h2>Tools Used to Write This Book</h2>
+		<p>
+		    This entire book has been typed using raw HTML5 technologies.
+		    I have used <code>Emacs</code> with <code>web-mode</code>.
+		    Material design has been used and I do not force a font on
+		    users except for headings. You can set default font in your
+		    browser and if you do not set then it will be rendered mostly
+		    in a <code>serif</code> font.
+		</p>
+		<p>
+		    For rendering Mathematics, I have used MathJax. Since pages
+		    are small it does not really matter as very little math will
+		    be present on single page. I have tried to keep the
+		    UI sane and responsive in nature. But the problem is when
+		    I edit the pages they do cros <code>A4</code> paper size.
+		    Keeping it in <code>HTML</code> is important as it can be
+		    scanned and indexed by a search-engine. That is why I will
+		    not prepare an index as that would be a herculean task.
+		</p>
+		<p>
+		    For preparing images I have mostly used raw <code>SVG</code>,
+		    which are hand-coded. For some images I have used POV-Ray, which
+		    is a rayracer program.
+		</p>
+		<p>
+		    Great folks of Mozilla have written great documentation on <code>HTML5,
 			CSS3, SVG</code> along with Math authoring. For now bear the MathJax
-			version. Eventually, I will run all this through <code>phantomjs</code>
-			and render all math server side making the load blazing fast.
-		    </p>
-		    <p>
-			You would ask me what about index. This book will have no index.
-			I rely on search engines to generate that.
-		    </p>
-		    <p>
-			There is one more reason to use raw HTML5, CSS3 and SVG is that
-			frameworks come and go. Also, I wanted to learn these technologies
-			in depth. So you see it is kind of selfish.
+		    version. Eventually, I will run all this through <code>phantomjs</code>
+		    and render all math server side making the load blazing fast.
+		</p>
+		<p>
+		    You would ask me what about index. This book will have no index.
+		    I rely on search engines to generate that.
+		</p>
+		<p>
+		    There is one more reason to use raw HTML5, CSS3 and SVG is that
+		    frameworks come and go. Also, I wanted to learn these technologies
+		    in depth. So you see it is kind of selfish.
 
-			I did use <code>Sphinx</code> documentation tool but recently
-			with version 1.7.0 release several plugins broke. Then, I realized
-			why Knuth froze his typesetting engine <code>τεχ</code> in the
-			sense that new features are not allowed.
-		    </p>
-		</section>
-		<section>
-		    <h2>Acknowledgements</h2>
-		    <p>
-			To all those who tried to do good things by helping others.
-			Namely, Richard M. Stallman, Donald Knuth etc. I will fill this
-			later.
-		    </p>
-		</section>
-		<div class="clear-both"></div>
-	    	<footer class="margins">
-		    <a href="preface.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fl">Previous</a>
-		    <a href="preface3.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fr">Next</a>
-		</footer>
-	</page>
-    </body>
+		    I did use <code>Sphinx</code> documentation tool but recently
+		    with version 1.7.0 release several plugins broke. Then, I realized
+		    why Knuth froze his typesetting engine <code>τεχ</code> in the
+		    sense that new features are not allowed.
+		</p>
+	    </section>
+	    <section>
+		<h2>Acknowledgements</h2>
+		<p>
+		    To all those who tried to do good things by helping others.
+		    Namely, Richard M. Stallman, Donald Knuth etc. I will fill this
+		    later.
+		</p>
+	    </section>
+	</div>
+	<div class="clear-both"></div>
+	<footer class="margins">
+	    <a href="preface.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fl">Previous</a>
+	    <a href="preface3.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fr">Next</a>
+	</footer>
+    </page>
+</body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Addition of two numbers."/>
+    <meta name="keywords" content="education, technology, mathematics, addition, scheme"/>
+    <meta name="author" content="Shiv Shankar Dayal" />
+    <meta name="copyright" content="Shiv Shankar Dayal" />
+    <meta name="robots" content="index,follow"/>
+    <meta http-equiv="expires" content="86400"/>
+    <meta name="viewport" content="width=21cm, initial-scale=1">
+    <title>Humans, education and technology</title>
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/material-components-web.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script>
+     MathJax.Hub.Config({
+	 config: ["MMLorHTML.js"],
+	 jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+	 extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+	 TeX: {
+	     extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+	 }
+     });
+    </script>
+</head>
+<body class="mdc-typography">
+    <page size="A4">
+	<header class="mdc-toolbar mdc-theme--secondary-dark">
+	    <div class="mdc-toolbar__row">
+		<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+		    <span class="mdc-toolbar__title"><a href="/" class="menu-anchor">Home</a></span>
+		    <span class="mdc-toolbar__title"><a href="toc.html" class="menu-anchor">Table of Contents</a></span>
+		</section>
+	    </div>
+	</header>
+	<div class="margins">
+	    <section>
+		<h2>Addition</h2>
+		<p>
+		    By now you know the addition process using number axis for which we use \(+\) symbol.
+		    An example is \(0 + 0 = 0\). On left of \(=\) we have two zeros called
+		    <strong>operands</strong> and \(+\) as <strong>operator</strong>. On the right side of
+		    \(=\) we have the result of applying the operator to operands. So we conclude that
+		    sum i.e. result of addition of two zeros gives us a zero. There is zero car and here is
+		    zero car adding up to zero car.
+		</p>
+		<p>
+		    Now if you have <code>Scheme</code> programming langauge ineterpreter installed
+		    on a computer then I would ask you to launch it. I would recommend using
+		    <code>GNU Guile</code> as it interfaces with <code>C</code> programming langauge very
+		    nicely. The operating system I would recommend is <code>Trisquel</code> GNU/Linux
+		    distribution. How to install them is outside of scope of the book. However, if you
+		    do have then you can do following:
+		</p>
+		<pre>
+		    <samp>
+<span class="prompt">shiv@alptop:~$ </span><kbd>guile</kbd>
+GNU Guile 2.0.13
+Copyright (C) 1995-2016 Free Software Foundation, Inc.
+
+Guile comes with ABSOLUTELY NO WARRANTY; for details type `,show w'.
+This program is free software, and you are welcome to redistribute it
+under certain conditions; type `,show c' for details.
+
+Enter `,help' for help.
+span class="prompt">scheme@(guile-user)> </span><kbd>(+ 0 0)</kbd>
+$1 = 0
+<span class="prompt">scheme@(guile-user)> </span>
+		    </samp>
+		</pre>
+		<p>
+		    Text in red color is prompt. White text with black backgroundf is keyboard
+		    input. Rest is text
+		    printed by <code>bash</code> shell and <code>guile</code> interpreter.
+		</p>
+		<p>
+		    The notation we used where operator is in between operands is called <i>infix</i>
+		    notation and when operator preceded operands then it is called <i>prefix</i> or
+		    <i>polish</i> notation. Similarly when operator follows operands then it is called
+		    <i>postfix</i> or reverse-polish notation. Though, we are used to infix notation
+		    prefix and postfix notations have huge advantages over infix notation.
+		</p>
+	    </section>
+	</div>
+	<footer class="margins">
+	    <a href="basics2.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fl">Previous</a>
+	    <a href="prefix-postfix.html" class="mdc-button mdc-theme--secondary-light mdc-button--raised fr">Next</a>
+	</footer>
+    </page>
+</body>
+</html>
